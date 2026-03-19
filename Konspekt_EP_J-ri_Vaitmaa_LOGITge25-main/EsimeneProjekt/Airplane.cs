@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace EsimeneProjekt
 {
+    public enum TravelClass
+    {
+        FirstClass, SecondClass, TouristClass, BaggageRoom
+    }
     public class Airplane : Vehicle
     {
         public int FlyHeight { get; set; }
