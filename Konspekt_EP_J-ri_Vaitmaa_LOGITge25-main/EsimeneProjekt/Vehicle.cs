@@ -38,7 +38,8 @@ namespace EsimeneProjekt
         /// Returns info about this car
         /// </summary>
         /// <returns>Human-readable sentence as a string</returns>
-        public string GetInfo()
+        public virtual string GetInfo()
+            // Baasklassi meetod GetInfo omab kaitstud sona virtual, mis laseb siin klassis olevat meetodit, seda parivatel klassidel sonaga override asendada
         {
             return $"This is a {Mark} {Model}, it is {Colour} color and weighs {EmptyWeight} Tons.\nLicense plate number is {LicensePlate}";
         }
